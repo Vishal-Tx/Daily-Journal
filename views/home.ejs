@@ -1,0 +1,36 @@
+<%- include("partials/header"); -%>
+
+
+    <h1>HOME</h1>
+
+    <p>
+       Hello, I am Vishal Gupta.</p>
+<p>This is a Daily Journal, where you can write about your life or anything else to that Daily basis.
+</p>
+<p></p>You can create and even delete the Journal which you have created.</p>
+
+<p>1. Hit Compose to open the compose age where you can make a nw entry to your journal.</p>
+<p>2. Hit Read More if you want to read more about your journal.</p>
+<p>3. You can delete your Journal by going into the Read More and presiing the delete button. </p>
+    
+
+    <div class='posts'>
+
+        <% posts.forEach(post=> { %>
+            <h1>
+                <%= post.title %>
+            </h1>
+            <p>
+                <%= post.content.substring(0,200)+' ...' %>
+                <a href="posts/<%= post.title %>" >Read more</a>
+            </p>
+            
+
+            <% }); %>
+
+                <form action="/compose" method="get">
+                    <button type="submit" class="btn btn-primary">Compose</button>
+    </div>
+    </form>
+
+    <%- include("partials/footer"); -%>

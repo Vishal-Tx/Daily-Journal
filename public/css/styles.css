@@ -1,0 +1,67 @@
+.container-fluid {
+  padding: 2% 10% 2%;
+
+  background-color: #C2DED1;
+}
+.navbar {
+  padding: 0%;
+}
+
+html,
+body {
+  background-color: #ECE5C7;
+  height: 100%;
+}
+.main-content {
+  min-height: 100%;
+  padding: 2% 10% 2%;
+}
+
+.nav-link {
+  color: grey;
+}
+
+.nav-link:hover {
+  color: #1abc9c;
+  font-weight: 400;
+}
+
+.navbar-toggler-icon {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+
+  border-top: 10px solid grey;
+}
+
+.composeForm .btn {
+  margin-top: 20px;
+}
+
+.posts{
+  text-decoration: none;
+}
+.posts h1, .posts .btn{
+  margin-top: 30px;
+}
+
+.posts a, .posts p {
+  font-weight: 400;
+  text-decoration: none;
+}
+
+
+
+.footer {
+  text-align: center;
+  background-color: #CDC2AE;
+  height: 100px;
+  width: 100%;
+}
+
+.footer p {
+  padding-top: 35px;
+  font-size: 15px;
+  color: #fff;
+}
